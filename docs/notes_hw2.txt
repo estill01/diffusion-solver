@@ -1,0 +1,32 @@
+Develop 3D heat diffusion solver in C/C++
+
+1
+	- Create a program that can solve heat diffusion
+	- 3 dimensions
+
+	* Have program set up arbitrary Cartesian domain
+
+	* Do not assume that the physical domain is cubic
+			> can specify x, y, z values for shape of space
+
+	* Do not assume that the partitioning is symmetric
+			> can specify dx, dy, dz independently
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

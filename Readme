@@ -1,0 +1,22 @@
+   _____      __  __                        
+	 |  __ \(_)/ _|/ _|         (_)            
+	 | |  | |_| |_| |_ _   _ ___ _  ___  _ __  
+	 | |  | | |  _|  _| | | / __| |/ _ \| '_ \ 
+   | |__| | | | | | | |_| \__ \ | (_) | | | |
+	 |_____/|_|_| |_|  \__,_|___/_|\___/|_| |_|
+
+   By Ethan Stillman				     ____       _                 
+															 / ____|     | |                
+															| (___   ___ | |__   ____  _ __ 
+															 \___ \ / _ \| |\ \ / / _ \ '__|
+															 ____) | (_) | | \ V /  __/ |   
+															|_____/ \___/|_|  \_/ \___|_|   
+							 
+
+FAQ
+
+What is this?																								
+	This is the world's greatest 3-d heat equation/diffusison solver.
+	Plug in some numbers, get out a simulation of the world.
+
+

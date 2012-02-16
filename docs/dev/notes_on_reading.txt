@@ -1,0 +1,41 @@
+NOTES ON READING
+
+§ 2.4 Tridiagonal and Band Diagonal Systems of Equations
+=======================================================
+74
+routine: tridag (code on page 75)
+
+Naturally, one does not reserve storage for the full N x N matrix,
+but only for the nonzero components, stored as three vectors
+
+Band Diagonal Systems
+---------------------
+76
+The geralized case for tridags
+
+This is for when there's a tridag + some other regularly spaced
+data (i.e., like with our heat diffusion equations)
+
+banbks
+	Once the matrix A has been decomposed, any number of right-hand
+	sides can be solved in turn by repeated calls to banbks
+	(backsubsitution)
+
+
+
+§ 2.7 Sparse Linear Systems
+===========================
+Cyclic Tridiagonal Systems
+--------------------------
+	Sherman-Morrison formula
+		You compute A' from A and then want to make a small change to A but don't want to 
+		have to completely recalculate A'.
+		
+
+
+
+
+
+
+
+

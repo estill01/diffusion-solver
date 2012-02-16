@@ -1,0 +1,54 @@
+Requirements
+
+================================================
+  3-D heat diffusion solver
+================================================
+	> set up arbitrary Cartesian domain
+		- can specify x, y, z values for shape of space
+	> can specify dx, dy, dz independently
+	> Create a reasonable diffusivity constant
+	> Create a reasonable time step
+
+================================================
+  System discretizing methods
+================================================
+ > Forward-Time Central-Space
+ > Crank-Nicholson Method (see: NR, chapter 18)
+ > OPTIONAL: Alternating Direction Implicit (ADI) Crank-Nicholson Method
+
+ Useful Tools/Techniques
+ -----------------------
+ > Gaussian elimination
+ > Gauss Jordan
+ ** Probably a bad idea to store all the zeros
+
+================================================
+  Features::General
+================================================
+  > set the initial condition
+	  - Gaussian + noise
+	> ability to specify the following boundary conditions
+	  - Dirichlet (constant) conditions
+		- Periodic boundary conditions
+			>> i.e. make it so that you can conduct the simulation on a
+			   space that wraps around on itself such as cylinder 
+			>> boundary conditions are equal to the temp on the opposite side
+	> an arbitrary time-independent 'source term' added to the right-hand side of the equation
+	  -  i.e. specified S(i,j,k) where S is given
+		   >> recommended to prototype these boundary conditions in 1D to see how they behave
+
+	> Output
+		- not currently required
+		- probably useful to do though
+				
+================================================
+	Features::Benchmarking
+================================================
+	> include timers for evaluating total runtime performance
+	> submit benchmark plot
+		- problem size vs. runtime per algorithmic timestep for each implemented numerical method
+	> for benchmarking:
+		- boundary conditions = 0
+		- cubic domain
+		- dx = dy = dz
+

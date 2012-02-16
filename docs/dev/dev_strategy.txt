@@ -1,0 +1,18 @@
+DEV STRATEGY
+
+Resources
+=========
+tridag.c	--  sparse tridiagonal system solver
+bandec.c	--  LU Decomposition for band diagonal matrices
+	banmul.c
+
+banbks.c  --  Backsubstitution for band-diagonals
+							
+
+
+Implementation Plan
+===================
+load in/create matrix
+
+try bandec.c
+		

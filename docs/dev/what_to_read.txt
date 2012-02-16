@@ -1,0 +1,36 @@
+Content to read:
+	Num Recipes
+*		2.4		p 50 - 55					Tridiagonal & Band Diagonal Systems of Equations
+		2.7		p 71 - 90					Sparse Linear Systems
+
+		11.3	p 475 - 481				Eigenvalues + Eigenvectors of a Tridiagonal Matrix
+
+!		19			p	788						Integral Equations and Inverse Theory
+			19.2	p 847						Diffusive Initial Value Problems
+			19.3	p 853						Initial Value Problems in Multidimentions
+			19.4  p 857						Fourier and Cyclic Reduction Methods for Boundary
+															Value Problems
+
+		Diffusion equation
+		827, 847ff, 864
+			Crank-Nicolson method
+			848, 853, 855
+
+			FTCS
+			847ff, 850f, 864
+				167, 836ff, 847ff, 852, 864 
+			
+			Multidimentional
+			855f
+
+		Tridiagonal matrix
+		50f, 66, 156, 460f, 494
+			ADI (extra credit)
+			870f
+			
+			from cubic spline: 115
+			cyclic: 74f
+			in cyclic reduction: 862
+			eigenvalues: 475ff
+			w/ fringes: 831
+

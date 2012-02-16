@@ -20,8 +20,7 @@ Requirements
  -----------------------
  > Gaussian elimination
  > Gauss Jordan
- 
- > Probably a bad idea to store all the zeros
+ ** Probably a bad idea to store all the zeros
 
 ================================================
   Features::General

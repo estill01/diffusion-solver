@@ -1,0 +1,53 @@
+CSPP58001 Numerical Methods
+Prof. Andrew Siegel
+TA: Kyle Gerard Felker
+Winter '12
+----------------------------------
+Homework #2 (v0.2)
+Due Monday, February 13th, 5PM
+
+The next series of homework assignments will focus on the continuing development of a large-scale code development project rather than a collection of smaller assignments. 
+
+Your first milestone is to develop a 3D heat diffusion solver in a non-interpreted language (presumably C, C++, or Fortran). The code requirements will emphasize the numerical techniques learned in lecture along with the practical goals of the CSPP program. 
+
+There is no formal "submission". Rather, your progress will be examined
+for meeting various checkpoints on the due date. You must commit a stable version of your code to your repository (see "Setup") by the due date, which will be graded some indeterminate time later. 
+
+--------------------------
+Setup
+--------------------------
+
+1. GITHUB
+-- You will host your code on the free web-based GitHub service, which uses the Git revision control systems as well as providing other nice "community features" (social networking, etc.). You will need to create a GitHub account and read the simple instructions for setting up a project. The repositories are publicly visible. 
+(10 pts)
+
+--------------------------
+Code
+--------------------------
+2. Create a program which can solve the heat diffusion equation in 3 dimensions. First, have your code setup an arbitrary Cartesian domain. For now, do not assume that the physical domain is cubic (l_x != l_y != l_z) and do not assume that the partitioning is symmetric (dx != dy != dz). Choose a reasonable diffusivity constant and time step. Use good programming etiquette (good comments, clean program structure, include a readme file). (10 pts)
+
+2. Your program must implement the following two methods of discretizing the system:
+ - Forward-Time Central-Space (20 pts)
+ - Crank-Nicolson Method (20 pts) (see NR, chapter 18)
+ - OPTIONAL: Alternating Direction Implicit (ADI) Crank-Nicolson Method. This is the "operator splitting" method mentioned in lecture. The 3D system is tridiagonal. (Extra credit 20 pts)
+
+How you solve the linear system is up to you (Gaussian elimination, Gauss Jordan, magic, etc.). You do not have to use the most efficient method, but it is recommended to not store the entire matrix with all its zeroes. 
+
+3. Your code must have the following features built in:
+ - A function that sets the initial condition (Gaussian+noise) (10 pts)
+ - Ability to specify the following boundary conditions. (10 pts)
+	- Dirichlet (constant) conditions
+	- Periodic boundary conditions. (This is as though the domain "wraps" around like a cylinder. The boundary conditions are equal to the temperature on the opposite side.)
+ - An arbitrary time-independent "source term" added to the right hand side of the equation
+   (ie specified S(i,j,k), where S is given)
+It is recommended to first prototype these boundary conditions in the 1D problem in MATLAB to get a feel for how they behave. 
+
+Output (graphics, binary, text) is not required for this benchmark, but implementing it is recommended to ensure proper functioning of your code. One way of doing this is to print the temperature at a certain slice "z-height" to a formatted text file every n number of timesteps, separating the time step temperature data by new lines. Then, plot the data in MATLAB or your favorite graphics utility. 
+
+--------------------------
+Analysis
+--------------------------
+5. Include timers in your code for evaluating total runtime performance. Submit a plot of your code's "problem size" vs. "runtime per algorithmic timestep" for each of the implemented numerical methods. When evaluating the performance, use boundary conditions equal to 0 and a cubic domain with dx=dy=dz. (20 pts)
+
+Send your github user name to Prof. Siegel and Kyle via email by the due date. 
+
